@@ -4,7 +4,6 @@ def getTotalX(a, b):
     SinDuplicados=[]
     final1=[]
 
-    final3=[]
     final2=[]
 
     # Write your code here
@@ -20,31 +19,16 @@ def getTotalX(a, b):
                 SinDuplicados.append(factores[z])
             # SinDuplicados.append(factores[z])
             # list(set(SinDuplicados))
-
-    print(SinDuplicados)
-
-        #     pass
-
-        # for y in a:
-        #     if x in factores and x%y==0:
-        #         print(x)
-
-#             for w in factores:
-#                 if w not in SinDuplicados:
-#                     SinDuplicados.append(w)
-#                 else:
-#                     final1.append(w)
-# #             parte2=list(set(final1))
-
-            # if x not in final2:
-            #     final2.append(x)
-            # else:
-            #     final3.append(x)
-    # print(final3)
-
-
-
-#     print(len(list(set(final3[1:len(final3)-1]))))
+    for y in a:
+        for w in SinDuplicados:
+            if w%y==0:
+                final1.append(w)
+                for t in range(0,len(final1)):
+                    if final1.count(final1[t])==len(a):
+                        if final1[t] not in final2:
+                            final2.append(final1[t])
+    print(final2)
+                
 
 getTotalX([2,4],[16,32,96])
 
@@ -52,9 +36,6 @@ getTotalX([2,4],[16,32,96])
 #                         final1.append(w)
 #                     else:
 #                         print(w)
-
-
-
 
 
 
