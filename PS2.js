@@ -2,6 +2,7 @@ function breakingRecords(scores) {
     // Write your code here
     var acumMax=0
     var acumMin=0
+    rta=[]
     
     for(const x of scores){
         if(x<scores[scores.indexOf(x)+1]){
@@ -13,7 +14,7 @@ function breakingRecords(scores) {
 
     }
     rta.push(acumMax,acumMin)
-    return rta
+    console.log(rta)
     
 
 }
