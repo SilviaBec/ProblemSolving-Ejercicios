@@ -12,8 +12,13 @@ function breakingRecords(scores) {
             acumMax=acumMax+1
         }
 
+        if(x<bajo){
+            bajo=x
+            acumMin=acumMin+1
+        }
+
     }
-        console.log(acumMax)
+        console.log(acumMax,acumMin)
     }
     
     
@@ -26,6 +31,6 @@ function breakingRecords(scores) {
     //con el num siguiente no el acum
     //No debe compararse al acumulado que serian 1 2 3 etc sino al numero min o max    
 
-breakingRecords([10,5,20,20,4,5,2,25,1])
+breakingRecords([3,4,21,36,10,28,35,5,24,42])
 //3,4,21,36,10,28,35,5,24,42 debe dar 4 0 ya funciono 
 //10,5,20,20,4,5,2,25,1 ESTE DEBE DAR 2 4
