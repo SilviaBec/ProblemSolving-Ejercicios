@@ -10,17 +10,18 @@
 
 
 def birthday(s, d, m):
-    resultado2=[]
-    acumulado=0
-    if s[0]==d:
-        print(m)
+    suma=s[0]
+    if suma<d:
+        while suma<d:
+                for x in range(1,len(s)):
+                    suma = suma +s[x]
+                    print(suma)
+        #No se si es por donde puse el print pero deberia parar cuando la suma supera o iguala 3
+        #aqui sigue derecho, suma todo hasta 21
     else:
-        while acumulado<d:
-            for x in s:
-                for i in range(len(s)):
-                    # acumulado = 
-                    acumulado = acumulado +(x+s[i])
-    print(acumulado)
+        print(suma)
+        
+
 
 
         
