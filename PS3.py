@@ -15,6 +15,7 @@ def birthday(s, d, m):
         for x in range(1,len(s)):
             while suma<d:
                 suma = suma +s[x]
+                print(suma)
                 print(s[x])
         #No se si es por donde puse el print pero deberia parar cuando la suma supera o iguala 3
         #aqui sigue derecho, suma todo hasta 21
