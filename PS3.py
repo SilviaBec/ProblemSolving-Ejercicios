@@ -13,7 +13,8 @@ def birthday(s, d, m):
     suma=s[0]
     acum=0
     if suma<d:
-        for x in range(1,len(s)):
+        for i in s:
+            for x in range(1,len(s)):
                         suma = suma +s[x]
                         if suma==d:
                             acum=acum+1
