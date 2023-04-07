@@ -18,6 +18,7 @@ def birthday(s, d, m):
                         suma = suma +s[x]
                         if suma==d:
                             acum=acum+1
+                            
                             print(acum)
         #No se si es por donde puse el print pero deberia parar cuando la suma supera o iguala 3
         #aqui sigue derecho, suma todo hasta 21
