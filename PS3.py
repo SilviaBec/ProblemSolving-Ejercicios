@@ -1,25 +1,19 @@
-# a=[1,1,1,1,1,1]
-# dia=3
-# acumulado=0
-
-# for x in a:
-#         while acumulado<dia:
-#             acumulado=acumulado+x
-#             print(acumulado)
 
 
+def birthday(lista, dia, mes):
 
-def birthday(s, d, m):
-    suma=s[0]
-    acum=0
-    acum2=0
-    if suma<d:
-        for i in range(0,len(s)): # i= 0 1 2 3 4 
-            for y in s[i:i+m]:
-                    suma = suma +s[y]
-                    if suma== d:
-                            acum=acum+1
-                            print(s[i:i+m])
+    rta=0
+    # acum2=0
+    # if suma<d:
+    for x in range(0,len(lista)): # i= 0 1 2 3 4 
+        if sum(lista[x:x+mes]) ==dia and len(lista[x:x+mes])==mes:
+            rta=rta+1
+    print(rta)
+                    # suma = suma +s[y]
+                    # if suma== d:
+                    #     acum=acum+1
+                
+                            
             # for y in range(s[i,m]):
     #             suma = suma +s[y]
     #             if suma==d:
