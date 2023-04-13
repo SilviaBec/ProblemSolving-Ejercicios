@@ -24,11 +24,11 @@
 const ar=[1,3,2,6,1,2]
 const k=3
 var lista2=[]
-for(var i of ar){ // 1 3 2 6 1 2
-    for(let x=0; x< ar.length;x++){ // 0 1 2 3 4 5
-        if(x<x+1 && (ar[x]+ar[x+1])%k){
+for(var x of ar){ // 1 3 2 6 1 2
+    for(let i=0; i< ar.length;i++){ // 0 1 2 3 4 5
+        if((ar[i]+ar[i+1])%k){
             
-            console.log(x,x+1)
+            console.log((ar[i],ar[i+1])/k)
             
             }
 
@@ -37,3 +37,4 @@ for(var i of ar){ // 1 3 2 6 1 2
 
     //no esta dando debe dar 
     //1-2/1-2/3-6/
+    //node PS4.js
