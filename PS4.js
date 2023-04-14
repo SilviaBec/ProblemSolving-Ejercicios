@@ -24,17 +24,12 @@
 const ar=[1,3,2,6,1,2]
 const k=3
 var lista2=[]
-for(var x of ar){ // 1 3 2 6 1 2
-    for(let i=0; i< ar.length;i++){ // 0 1 2 3 4 5
-        if((ar[i]+ar[i+1])%k){
-            
-            console.log((ar[i],ar[i+1])/k)
-            
-            }
-
-        }
-    }
-
+for(let i=0; i< ar.length;i++){ // 0 1 2 3 4 5
+    
+    console.log((ar[i]))
+}
+        
+        
     //no esta dando debe dar 
     //1-2/1-2/3-6/
     //node PS4.js
