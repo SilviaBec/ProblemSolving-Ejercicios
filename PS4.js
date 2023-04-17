@@ -25,8 +25,12 @@ const ar=[1,3,2,6,1,2]
 const k=3
 var lista2=[]
 for(let i=0; i< ar.length;i++){ // 0 1 2 3 4 5
+    if(i<i+1 && (ar[i]+ar[i+1])%k){
+        var lista2=[]
+        lista2.push(i,i+1)
+        console.log(lista2)
+    }
     
-    console.log((ar[i]))
 }
         
         
