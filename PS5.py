@@ -1,11 +1,14 @@
 
 def migratoryBirds(arr):
+    lista=[]
     contador=1
     for e in arr:
-        for x in range(1,len(arr)):
-            if e==arr[x]:
-                contador=contador+1
-        print(e, contador)
+        if e not in lista:
+            lista.append(e)
+            
+        else:
+            print(e)
+            
 #necesito un contados cuantos hay de cada numero en el array
 #cual es el mas repetido y si hay un empate 
 #entre 2, elegir el mas bajo.
