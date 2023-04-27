@@ -4,13 +4,13 @@ def migratoryBirds(arr):
     lista2=[]
     contador=1
     for e in arr:
-    
+        
         if e not in lista:
             lista.append(e)
             
         else:
             lista2.append(e)
-            print(lista2.count(e))
+    print(max(lista2))
             
 #necesito un contados cuantos hay de cada numero en el array
 #cual es el mas repetido y si hay un empate 
