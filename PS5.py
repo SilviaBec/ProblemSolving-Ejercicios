@@ -1,11 +1,18 @@
 
 def migratoryBirds(arr):
     frecuencias=[]
-    contador=1
-    for e in arr:
-        frecuencias.append(arr.count(e))
-        pares=zip(arr,frecuencias)
-    print(list(pares))
+    finalistas=[]
+    if len(arr)>5 and len(arr)<200000:
+        for e in arr:
+            frecuencias.append(arr.count(e))
+        
+        for x, y in zip(arr,frecuencias):
+            if y ==max(frecuencias):
+                finalistas.append(x)
+    print(min(finalistas))
+
+    
+    #print(list(pares))
     # print(list(pares))
 
         
@@ -20,4 +27,4 @@ def migratoryBirds(arr):
 #cual es el mas repetido y si hay un empate 
 #entre 2, elegir el mas bajo.
 #answer here is 4 porque el 4 se repite 3 veces , la mayor frecuencia
-migratoryBirds([1,4,4,4,5,3])
+migratoryBirds([1,2,3,4,5,4,3,2,1,3,4])
