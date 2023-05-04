@@ -2,7 +2,7 @@
 def migratoryBirds(arr):
     frecuencias=[]
     finalistas=[]
-    if len(arr)>5 and len(arr)<200000:
+    if len(arr)>=5 and len(arr)<=200000:
         for e in arr:
             frecuencias.append(arr.count(e))
         
@@ -12,16 +12,13 @@ def migratoryBirds(arr):
     print(min(finalistas))
 
     
-    #print(list(pares))
-    # print(list(pares))
-
-        
-        # if e not in lista:
-        #     lista.append(e)
-            
-        # else:
-        #     lista2.append(e)
-        #     print(lista2.count(e))
+    #---------------------SEGUNDO INTENTO MUCHAS MENOS LINEAS MISMOS CASOS FALLIDOS---------
+    # frecuencias=[]
+    # if len(arr)>5 and len(arr)<200000:
+    #     arr=sorted(arr)
+    #     for e in arr:
+    #         frecuencias.append(arr.count(e))
+    # print(arr[frecuencias.index(max(frecuencias))])
             
 #necesito un contador cuantos hay de cada numero en el array
 #cual es el mas repetido y si hay un empate 
