@@ -20,14 +20,14 @@ def migratoryBirds(arr):
     #         frecuencias.append(arr.count(e))
     # print(arr[frecuencias.index(max(frecuencias))])
 
-    frecuencias=[]
-    if len(arr)>5 and len(arr)<200000:
-        arr=sorted(arr)
-        for e in arr:
-            frecuencias.append(arr.count(e))
-    maximo=max(frecuencias)
-    indice=frecuencias.index()
-    print(arr[indice])
+    arr=sorted(arr)
+    for e in arr:
+        arr.count(e)
+        if arr.count(e) >= arr.count(e):
+            print(e)
+    
+    #     indice=arr.index(arr.count(e))
+    # print(arr[indice])
             
 #necesito un contador cuantos hay de cada numero en el array
 #cual es el mas repetido y si hay un empate 
