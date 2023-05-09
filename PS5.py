@@ -21,10 +21,13 @@ def migratoryBirds(arr):
     # print(arr[frecuencias.index(max(frecuencias))])
 
     arr=sorted(arr)
-    for e in arr:
-        arr.count(e)
-        if arr.count(e) >= arr.count(e):
-            print(e)
+    for x in len(arr):
+        for e in arr:
+            arr.count(e)
+            if arr.count(e) >= arr[x]:
+                print(arr.count(e))
+
+        
     
     #     indice=arr.index(arr.count(e))
     # print(arr[indice])
