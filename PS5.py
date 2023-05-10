@@ -1,5 +1,27 @@
 
 def migratoryBirds(arr):
+    
+    for e in arr:
+        for x in range(1,len(arr)):
+            if e == arr[x]:
+                frecuencia=0
+                frecuencia = frecuencia+1
+                print(frecuencia)
+            else:
+                frecuencia=1
+                print(frecuencia)
+
+        #     cuenta=0
+        #     cuenta=cuenta+1
+        # print(cuenta)
+        # for x in range(0,len(arr)):
+        #     if e in arr:
+
+
+        
+    
+    
+    
 #     frecuencias=[]
 #     finalistas=[]
 #     if len(arr)>=5 and len(arr)<=200000:
@@ -20,20 +42,12 @@ def migratoryBirds(arr):
     #         frecuencias.append(arr.count(e))
     # print(arr[frecuencias.index(max(frecuencias))])
 
-    arr=sorted(arr)
-    for x in len(arr):
-        for e in arr:
-            arr.count(e)
-            if arr.count(e) >= arr[x]:
-                print(arr.count(e))
 
-        
-    
-    #     indice=arr.index(arr.count(e))
-    # print(arr[indice])
+
+
             
 #necesito un contador cuantos hay de cada numero en el array
 #cual es el mas repetido y si hay un empate 
 #entre 2, elegir el mas bajo.
 #answer here is 4 porque el 4 se repite 3 veces , la mayor frecuencia
-migratoryBirds([1,2,3,4,5,4,3,2,1,3,4])
+migratoryBirds([1,2,2,4])
