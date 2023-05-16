@@ -1,12 +1,11 @@
 
+from collections import Counter
+
+
 def migratoryBirds(arr):
-    frec=[]
-    for e in arr:
-        frecuencias= arr.count(e)
-        if frecuencias != 1:
-            frec.append(frecuencias)
-    frec=sorted(frec)
-    print(max(frec))
+    # conteo=Counter(arr) #Counter({2: 2, 1: 1, 4: 1}) numero: frecuencia en lista
+    # maxima=max(conteo.values())
+    # print(maxima)
             #Hasta aca voy super bien me imprime 2 2 las dos frecuencias mas repetidas
     
 
@@ -43,6 +42,21 @@ def migratoryBirds(arr):
 
 
 
+
+    #INTENTO CON COMPRENSION DE LISTAS FALLÓ, PERO AVANZÓ, QUITAR SORTET MAYBE:
+    # if len(arr)>5 and len(arr)<200000:
+    # arr=sorted(arr)
+    # frecuencias=[arr.count(e) for e in arr]
+    # print(arr[frecuencias.index(max(frecuencias))])
+
+
+
+    frec=Counter(arr) #Counter({2: 2, 1: 1, 4: 1}) numero: frecuencia en lista
+    maxi= max(frec.values()) #2 el valor maximo de frecuencia
+    #frec.items() me da: ([(1, 1), (2, 2), (4, 1)])
+    resultado=[x for x,y in frec.items() if y == maxi] #por cada x,y en el diccionario fre.items() 
+    #añadir x o sea el numero del array si y o sea la frecuencia es = a el num maximo de frecuencia
+    print (min(resultado))
 
             
 #necesito un contador cuantos hay de cada numero en el array
