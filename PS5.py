@@ -1,10 +1,12 @@
 
 def migratoryBirds(arr):
-    
+    frec=[]
     for e in arr:
         frecuencias= arr.count(e)
         if frecuencias != 1:
-            print(frecuencias)
+            frec.append(frecuencias)
+    frec=sorted(frec)
+    print(max(frec))
             #Hasta aca voy super bien me imprime 2 2 las dos frecuencias mas repetidas
     
 
