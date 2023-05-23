@@ -15,10 +15,15 @@
 
 const DiaProgramador=256
 var anio=0
+calendario=""
 if ( anio =>1700 && anio <=1917 ){
     console.log("Julian calendario");
 
 }
 if (anio>1919){
-    console.log("Gregorian calendario");
+    console.log("Gregorian");
+}
+
+if (calendario=="Gregorian"){
+    febrero =28
 }
