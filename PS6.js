@@ -31,5 +31,7 @@ if (calendario=="Gregorian"){
 }
 
 if (anio=julian){
+    febrero="bisiesto"
 
 }
+
