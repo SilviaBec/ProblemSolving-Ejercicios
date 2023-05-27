@@ -14,18 +14,24 @@
 //The 256th day of a año bisiesto after 1918 is September 12, so the answer is 12.09.1984
 
 const DiaProgramador=256
+var dia=0
 var anio=0
 calendario=""
-if ( anio =>1700 && anio <=1917 ){
-    console.log("Julian");
+if ( anio =>1700 && anio <=2700 ){
+    if (anio =>1700 && anio <=1917){
+        console.log("Julian");
+    } else if(anio>=1918 && anio <=2700 ){
+        console.log("Gregorian");
+    }   
 
 }
-if (anio>1919){
-    console.log("Gregorian");
-}
 
-if (calendario=="Gregorian"){
-    febrero =28
+
+if (anio==1918){
+    if(dia ==31){
+        dia32= 45
+
+    }
 } else if ( calendario=="Julian"){
     febrero=30
 }
