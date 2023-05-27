@@ -1,7 +1,9 @@
 //Day of the Programmer: 256th day of the year
 // durante un año en el rango inclusivo de 1700 s 2700.
 // 1700 to 1917, Julian calendar; 
-// Since 1919 Gregorian calendar 
+// Since 1919 Gregorian calendar
+
+//QUEDE ACA:
 // Pasaron a gregoriano en 1918, when the next day after January 31st era Febrero 14th. 
 // Significando que en 1918, Febrero 14th was the 32nd day of the year in Ru.
 // Febrero tiene; 29 days during a leap year, and 28 during others. 
