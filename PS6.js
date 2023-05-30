@@ -15,6 +15,9 @@
 //Tipo 1984. divisible en 4, so it is a leap year. 
 //The 256th day of a año bisiesto after 1918 is September 12, so the answer is 12.09.1984
 
+
+//It should return a cadena representing the date of the 256th day of the year given.year: an integer
+//ejemplo input: 2017 output: 13.09.2017
 const DiaProgramador=256
 var dia=0
 var anio=0
@@ -30,16 +33,15 @@ if ( anio =>1700 && anio <=2700 ){
 
 
 if (anio==1918){
-    if(dia ==31){
-        dia32= 45
-
+    switch(mes){
+        case dia >=1 && dia<=31:
+                mes='01';
+                break;
+        case dia== 32 :
+                mes='02';
+                dia='14';
+                break;
+        
     }
-} else if ( calendario=="Julian"){
-    febrero=30
-}
-
-if (anio=julian){
-    febrero="bisiesto"
-
-}
-
+    }
+    
