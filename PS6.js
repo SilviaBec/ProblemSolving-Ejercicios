@@ -22,10 +22,40 @@ const DiaProgramador=256
 var dia=0
 var anio=0
 calendario=""
+
 if ( anio =>1700 && anio <=2700 ){
     if (anio =>1700 && anio <=1917){
+
+    // In the Julian calendar, los años bisiestos son divisibles by 4;   
+    if (anio %4==0){
+        console.log("bisiesto")
+        switch(mes){
+            case dia >=1 && dia<=31:
+                    mes='01';
+                    break;
+            case dia>= 32 && dia<=60 :
+                    mes='02';
+                    dia='14';
+                    break;
+            
+        }
+
+
+        }
+
+        
         console.log("Julian");
-    } else if(anio>=1918 && anio <=2700 ){
+    } 
+    
+
+    // In the Gregorian calendar, los años bisiestos are Divisible by 400 
+    //or Divisible by 4 and not divisible by 100
+    else if(anio>=1918 && anio <=2700 ){
+        if(anio%400==0 || anio%4==0 && anio%100 !=0){
+            
+        }
+
+
         console.log("Gregorian");
     }   
 
