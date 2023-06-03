@@ -37,6 +37,18 @@ if ( anio =>1700 && anio <=2700 ){
                     mes='02';
                     dia='14';
                     break;
+            case dia>= 60 && dia<=91 :
+                    mes='03';
+                    dia='14';
+                    break;
+            case dia>= 91 && dia<=119 :
+                    mes='04';
+                    dia='14';
+                    break;
+            case dia>= 119 && dia<=132:
+                    mes='05';
+                    dia='14';
+                    break;
             
         }
 
@@ -51,7 +63,7 @@ if ( anio =>1700 && anio <=2700 ){
     // In the Gregorian calendar, los años bisiestos are Divisible by 400 
     //or Divisible by 4 and not divisible by 100
     else if(anio>=1918 && anio <=2700 ){
-        if(anio%400==0 || anio%4==0 && anio%100 !=0){
+        if((anio%400==0 || anio%4==0 ) && anio%100 !=0){
             
         }
 
