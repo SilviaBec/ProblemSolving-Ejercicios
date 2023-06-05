@@ -18,72 +18,89 @@
 
 //It should return a cadena representing the date of the 256th day of the year given.year: an integer
 //ejemplo input: 2017 output: 13.09.2017
-const DiaProgramador=256
-var dia=0
-var anio=0
-calendario=""
+const DiaProgramador = 256
+var dia = 0
+var anio = 0
+calendario = ""
 
-if ( anio =>1700 && anio <=2700 ){
-    if (anio =>1700 && anio <=1917){
+if (anio => 1700 && anio <= 2700) {
+        if (anio => 1700 && anio <= 1917) {
 
-    // In the Julian calendar, los años bisiestos son divisibles by 4;   
-    if (anio %4==0){
-        console.log("bisiesto")
-        switch(mes){
-            case dia >=1 && dia<=31:
-                    mes='01';
-                    break;
-            case dia>= 32 && dia<=60 :
-                    mes='02';
-                    dia='14';
-                    break;
-            case dia>= 60 && dia<=91 :
-                    mes='03';
-                    dia='14';
-                    break;
-            case dia>= 91 && dia<=119 :
-                    mes='04';
-                    dia='14';
-                    break;
-            case dia>= 119 && dia<=132:
-                    mes='05';
-                    dia='14';
-                    break;
-            
+                // In the Julian calendar, los años bisiestos son divisibles by 4;   
+                if (anio % 4 == 0) {
+                        console.log("bisiesto")
+                        switch (mes) {
+                                case dia >= 1 && dia <= 31:
+                                        mes = '01';
+                                        break;
+                                case dia >= 32 && dia <= 60:
+                                        mes = '02';
+                                        break;
+                                case dia >= 61 && dia <= 92:
+                                        mes = '03';
+                                        break;
+                                case dia >= 93 && dia <= 123:
+                                        mes = '04';
+                                        break;
+                                        //voy como por aca
+                                case dia >= 124 && dia <= 131:
+                                        mes = '05';
+                                        break;
+                                case dia >= 1 && dia <= 154:
+                                        mes = '06';
+                                        break;
+                                case dia >= 119 && dia <= 132:
+                                        mes = '07';
+                                        break;
+                                case dia >= 119 && dia <= 132:
+                                        mes = '08';
+                                        break;                                                                        
+                                case dia >= 119 && dia <= 132:
+                                        mes = '09';
+                                        break;
+                                case dia >= 119 && dia <= 132:
+                                        mes = '10';
+                                        break;
+                                case dia >= 119 && dia <= 132:
+                                        mes = '11';
+                                        break; 
+                                case dia >= 119 && dia <= 365:
+                                        mes = '12';
+                                        break;                                
+                        }
+
+
+                }
+
+
+                console.log("Julian");
         }
 
 
+        // In the Gregorian calendar, los años bisiestos are Divisible by 400 
+        //or Divisible by 4 and not divisible by 100
+        else if (anio >= 1918 && anio <= 2700) {
+                if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
+
+                }
+
+
+                console.log("Gregorian");
         }
-
-        
-        console.log("Julian");
-    } 
-    
-
-    // In the Gregorian calendar, los años bisiestos are Divisible by 400 
-    //or Divisible by 4 and not divisible by 100
-    else if(anio>=1918 && anio <=2700 ){
-        if((anio%400==0 || anio%4==0 ) && anio%100 !=0){
-            
-        }
-
-
-        console.log("Gregorian");
-    }   
 
 }
 
 
-if (anio==1918){
-    switch(mes){
-        case dia >=1 && dia<=31:
-                mes='01';
-                break;
-        case dia== 32 :
-                mes='02';
-                dia='14';
-                break;
-        
-    }
-    }
-    
+if (anio == 1918) {
+        switch (mes) {
+                case dia >= 1 && dia <= 31:
+                        mes = '01';
+                        break;
+                case dia == 32:
+                        mes = '02';
+                        dia = '14';
+                        break;
+
+        }
+}
+
