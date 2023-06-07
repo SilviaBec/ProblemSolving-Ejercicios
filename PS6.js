@@ -42,26 +42,27 @@ if (anio => 1700 && anio <= 2700) {
                                 case dia >= 93 && dia <= 123:
                                         mes = '04';
                                         break;
-                                        //voy como por aca
+                                
                                 case dia >= 124 && dia <= 131:
                                         mes = '05';
                                         break;
-                                case dia >= 1 && dia <= 154:
+                                case dia >= 132 && dia <= 162:
                                         mes = '06';
                                         break;
-                                case dia >= 119 && dia <= 132:
+                                case dia >= 163 && dia <= 194:
                                         mes = '07';
                                         break;
-                                case dia >= 119 && dia <= 132:
+                                case dia >= 195 && dia <= 226:
                                         mes = '08';
-                                        break;                                                                        
-                                case dia >= 119 && dia <= 132:
+                                        break;            
+                                //quede aca ; corregir y revisar de nuevp                                                          
+                                case dia >= 227 && dia <= 157:
                                         mes = '09';
                                         break;
-                                case dia >= 119 && dia <= 132:
+                                case dia >= 158 && dia <= 187:
                                         mes = '10';
                                         break;
-                                case dia >= 119 && dia <= 132:
+                                case dia >= 188 && dia <= 218:
                                         mes = '11';
                                         break; 
                                 case dia >= 119 && dia <= 365:
