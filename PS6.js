@@ -56,16 +56,16 @@ if (anio => 1700 && anio <= 2700) {
                                         mes = '08';
                                         break;            
                                 //quede aca ; corregir y revisar de nuevp                                                          
-                                case dia >= 227 && dia <= 157:
+                                case dia >= 227 && dia <= 257:
                                         mes = '09';
                                         break;
-                                case dia >= 158 && dia <= 187:
+                                case dia >= 258 && dia <= 304:
                                         mes = '10';
                                         break;
-                                case dia >= 188 && dia <= 218:
+                                case dia >= 305 && dia <= 329:
                                         mes = '11';
                                         break; 
-                                case dia >= 119 && dia <= 365:
+                                case dia >= 330 && dia <= 365:
                                         mes = '12';
                                         break;                                
                         }
