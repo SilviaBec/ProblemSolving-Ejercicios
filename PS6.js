@@ -22,20 +22,26 @@ const DiaProgramador = 256
 var dia = 0
 var anio = 0
 calendario = ""
+totalDiasBisiesto=366
 
+//243 dias hasta agosto 31 en un año bisiesto
 if (anio => 1700 && anio <= 2700) {
+        //Julian calendar
         if (anio => 1700 && anio <= 1917) {
-                switch (mes) {
+                // In the Julian calendar, los años bisiestos son divisibles by 4;  
+                if (anio % 4 == 0) {
+                        console.log("bisiesto-julian")
+                        //En bisiesto febrero tiene 29 dias
+                }else{
+                        mes = '02';
+                }
+                switch (dia) {
                         case dia >= 1 && dia <= 31:
                                 mes = '01';
                                 break;
                         case dia >= 32 && dia <= 60:
-                                // In the Julian calendar, los años bisiestos son divisibles by 4;   
-                        if (anio % 4 == 0) {
-                        console.log("bisiesto-julian")
-                }else{
-                        mes = '02';
-                }
+                        
+                
 
                                 
                                 break;
@@ -81,7 +87,7 @@ if (anio => 1700 && anio <= 2700) {
 
         // In the Gregorian calendar, los años bisiestos are Divisible by 400 
         //or Divisible by 4 and not divisible by 100
-        else if (anio >= 1918 && anio <= 2700) {
+        else if (anio >= 1919 && anio <= 2700) {
                 if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
 
                 }
