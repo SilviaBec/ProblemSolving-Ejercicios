@@ -30,61 +30,12 @@ if (anio => 1700 && anio <= 2700) {
         if (anio => 1700 && anio <= 1917) {
                 // In the Julian calendar, los años bisiestos son divisibles by 4;  
                 if (anio % 4 == 0) {
-                        console.log("bisiesto-julian")
+                        dia=256-244 //12
                         //En bisiesto febrero tiene 29 dias
-                }else{
-                        mes = '02';
-                }
-                switch (dia) {
-                        case dia >= 1 && dia <= 31:
-                                mes = '01';
-                                break;
-                        case dia >= 32 && dia <= 60:
-                        
-                
-
-                                
-                                break;
-                        case dia >= 61 && dia <= 92:
-                                mes = '03';
-                                break;
-                        case dia >= 93 && dia <= 123:
-                                mes = '04';
-                                break;
-                        
-                        case dia >= 124 && dia <= 131:
-                                mes = '05';
-                                break;
-                        case dia >= 132 && dia <= 162:
-                                mes = '06';
-                                break;
-                        case dia >= 163 && dia <= 194:
-                                mes = '07';
-                                break;
-                        case dia >= 195 && dia <= 226:
-                                mes = '08';
-                                break;            
-                        //quede aca ; corregir y revisar de nuevp                                                          
-                        case dia >= 227 && dia <= 257:
-                                mes = '09';
-                                break;
-                        case dia >= 258 && dia <= 304:
-                                mes = '10';
-                                break;
-                        case dia >= 305 && dia <= 329:
-                                mes = '11';
-                                break; 
-                        case dia >= 330 && dia <= 365:
-                                mes = '12';
-                                break;                                
-                }
-
-                
+                }                              
 
                 
         }
-
-
         // In the Gregorian calendar, los años bisiestos are Divisible by 400 
         //or Divisible by 4 and not divisible by 100
         else if (anio >= 1919 && anio <= 2700) {
