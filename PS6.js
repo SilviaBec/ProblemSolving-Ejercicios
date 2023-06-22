@@ -32,6 +32,7 @@ if (anio => 1700 && anio <= 2700) {
                 if (anio % 4 == 0) {
                         dia=256-244 //12
                         //En bisiesto febrero tiene 29 dias
+                        console.log(dia,".","09",".",anio)
                 }                              
 
                 
@@ -40,26 +41,18 @@ if (anio => 1700 && anio <= 2700) {
         //or Divisible by 4 and not divisible by 100
         else if (anio >= 1919 && anio <= 2700) {
                 if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
-
+                        console.log(dia,".","09",".",anio)
                 }
 
 
-                console.log("Gregorian");
+                
         }
 
 }
 
 
 if (anio == 1918) {
-        switch (mes) {
-                case dia >= 1 && dia <= 31:
-                        mes = '01';
-                        break;
-                case dia == 32:
-                        mes = '02';
-                        dia = '14';
-                        break;
-
-        }
+        dia=256-244-14
+        console.log(dia,".","08",".",anio)
 }
 
