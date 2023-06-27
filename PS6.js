@@ -48,6 +48,12 @@ if (anio => 1700 && anio <= 2700) {
                 
         }
 
+        //analizar de nuevo esto
+        else if (anio >= 1919 && anio <= 2700) {
+                if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
+                        console.log(dia,".","09",".",anio)
+                }
+
 }
 
 
