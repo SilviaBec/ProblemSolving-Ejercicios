@@ -20,7 +20,7 @@
 //ejemplo input: 2017 output: 13.09.2017
 const DiaProgramador = 256
 var dia = 0
-var anio = 0
+var anio = 2017
 calendario = ""
 mesComun=30
 mesComun2=31
@@ -39,7 +39,6 @@ if (anio => 1700 && anio <= 2700) {
                         //En bisiesto febrero tiene 29 dias
                         console.log(dia,".","09",".",anio)
                 }                              
-
                 
         }
         // In the Gregorian calendar, los años bisiestos are Divisible by 400 
@@ -48,13 +47,14 @@ if (anio => 1700 && anio <= 2700) {
                 if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
                         console.log(dia,".","09",".",anio)
                 }
+                else{
+                        console.log("test")
+                }
 
-
-                
+        }else{
+                console.log("test2")
         }
-
 }
-
 
 if (anio == 1918) {
         dia=256-244-14
