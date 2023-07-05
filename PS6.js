@@ -32,6 +32,7 @@ totalDiasBisiesto=366
 if (anio => 1700 && anio <= 2700) {
         //Julian calendar
         if (anio => 1700 && anio <= 1917) {
+                //EN TODOS LOS AÑOS DE ESTE INTERAVALO DA 12.09.AÑO
                 // In the Julian calendar, los años bisiestos son divisibles by 4;  
                 if (anio % 4 == 0) {
                         //256 dia programador
@@ -43,6 +44,7 @@ if (anio => 1700 && anio <= 2700) {
         }
         // In the Gregorian calendar, los años bisiestos are Divisible by 400 
         //or Divisible by 4 and not divisible by 100
+        //RESULTADO  12 . 09 . 1920 EL DIA SIGUE MAL
         else if (anio >= 1919 && anio <= 2700) {
                 if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
                         console.log(dia,".","09",".",anio)
@@ -55,9 +57,9 @@ if (anio => 1700 && anio <= 2700) {
                 console.log("test2")
         }
 }
-
+//ACA DIO -2 . 08 . 1918 DIA WRONG
 if (anio == 1918) {
         dia=256-244-14
         console.log(dia,".","08",".",anio)
 }
-
+//NO ESTA IMPRIMIENDO EL AÑO 2017
