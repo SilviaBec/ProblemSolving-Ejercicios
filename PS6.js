@@ -63,3 +63,4 @@ if (anio == 1918) {
         console.log(dia,".","08",".",anio)
 }
 //NO ESTA IMPRIMIENDO EL AÑO 2017
+//prueba 2 sin reparar error del 2017
