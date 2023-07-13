@@ -62,5 +62,8 @@ if (anio == 1918) {
         dia=256-244-14
         console.log(dia,".","08",".",anio)
 }
-//NO ESTA IMPRIMIENDO EL AÑO 2017
-//prueba 2 sin reparar error del 2017
+else if(anio==2017){
+        console.log("TEST3")
+}
+//IMPRIME 2017 ACA PERO NO ARRIBA CUANDO ESTA DENTRO DEL RANGO INCLUSIVO
+//prueba 3 sin reparar error del 2017
