@@ -28,9 +28,9 @@ febreroBis = 29;
 totalDiasBisiesto = 366;
 
 //243 dias hasta agosto 31 en un año bisiesto
-if (anio => 1700 && anio <= 2700) {
+if (anio >= 1700 && anio <= 2700) {
         //Julian calendar
-        if ((anio) => 1700 && anio <= 1917) {
+        if ((anio) >= 1700 && anio <= 1917) {
                 
                 
                 //ACA DIO -2 . 08 . 1918 DIA WRONG
@@ -54,18 +54,15 @@ if (anio => 1700 && anio <= 2700) {
         //or Divisible by 4 and not divisible by 100
         //RESULTADO  12 . 09 . 1920 EL DIA SIGUE MAL
         else if ((anio) => 1919 && anio <= 2700) {
-                console.log("test" + anio);
+                
                 if ((anio % 400 == 0 || anio % 4 == 0) && anio % 100 != 0) {
                         console.log(dia,".","09",".",anio)
-                }
+                }else {console.log("ttst")}
         }
 }
 
-        // else if(anio==2017){
-        //         console.log("TEST3")
-
-//IMPRIME 2017 ACA PERO NO ARRIBA
 //CUANDO ESTA DENTRO DEL RANGO INCLUSIVO
 //prueba 3 sin reparar error del 2017
 //7/17/23 sigo sin encontrar el problema
 //prueba fallida del 17 de nuevo
+//Descubri mas años fallando
