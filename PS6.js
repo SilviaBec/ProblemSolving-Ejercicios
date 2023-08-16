@@ -31,13 +31,10 @@ diciembre= 31
 diasEneroaAgostoBisiesto=244;
 diasEneroaAgosto=243;
 var mes="";
-if(dia== 11 || dia==12 ||dia== 13 ||dia== 14){
-                                mes="09"
-                        } else {
-                                mes="08"
-                        }
+
 //243 dias hasta agosto 31 en un año bisiesto
 if (anio >= 1700 && anio <= 2700) {
+
         //Julian calendar
         if ((anio) >= 1700 && anio <= 1917) {
                 
@@ -50,6 +47,11 @@ if (anio >= 1700 && anio <= 2700) {
                         //256 dia programador
                         dia = 256 - 244; //12
                         //En bisiesto febrero tiene 29 dias
+                        if(dia>=13){
+                                mes="09"
+                                } else if(dia<13) {
+                                mes="08"
+                                }
                         
                         console.log(dia, ".", mes, ".", anio);
                 } else {
