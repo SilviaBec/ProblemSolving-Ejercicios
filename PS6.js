@@ -19,7 +19,7 @@
 //ejemplo input: 2017 output: 13.09.2017
 const DiaProgramador = 256;
 var dia = 0;
-const anio = 1701;
+const anio = 1900;
 calendario = "";
 mesComun = 30;
 mesComun2 = 31;
@@ -48,15 +48,21 @@ if (anio >= 1700 && anio <= 2700) {
                         dia = 256 - 244; //12
                         //En bisiesto febrero tiene 29 dias
                         if(dia>=13){
-                                mes="09"
+                                console.log(dia, ".", "09", ".", anio);
                                 } else if(dia<13) {
-                                mes="08"
+                                console.log(dia, ".", "08", ".", anio);
                                 }
                         
-                        console.log(dia, ".", mes, ".", anio);
+                        
                 } else {
-                        dia=256-243;
-                        console.log(dia, ".", mes, ".", anio);
+                        if(dia>=13){
+                                dia=256-243;
+                                console.log(dia, ".", "09", ".", anio);
+                                } else if(dia<13) {
+                                console.log(dia, ".", "08", ".", anio);
+                                }
+                
+                
 
                 }
         }
