@@ -1,6 +1,8 @@
 def ejercicio(ano):
     enAgBisiesto=244 
     enAgNormal=243
+    #de enero a agosto no hay 230 dias es el 230avo dia del año
+    enAg1918=230
     diaprogram=256
     if ano >=1700 and ano <=1917:
         if ano%4==0:
@@ -19,4 +21,10 @@ def ejercicio(ano):
             print(dia,'.','09','.',ano)
         
 
-(ejercicio(2016))
+        #1918 NO FUE BISIESTO feb=28 d
+    if ano ==1918:
+        dia=diaprogram-enAg1918
+        rta=[str(dia),"09",str(ano)]
+        print(".".join(rta))
+        
+(ejercicio(1918))
