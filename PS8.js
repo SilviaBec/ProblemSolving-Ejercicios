@@ -1,6 +1,7 @@
 function pr(n,li){
     for(let i=0; i<li.length;i++){
-        console.log(i)
+        const resultado = li.filter((x)=>x==li[i])
+        console.log(resultado)
     }
 }
 
