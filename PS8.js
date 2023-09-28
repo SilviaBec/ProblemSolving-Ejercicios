@@ -1,4 +1,5 @@
 function pr(n,li){
+    var contador=0;
     // for(let i=0; i<li.length;i++){
     //     const resultado = li.filter((x)=>x==li[i])
     //     console.log(resultado)
@@ -20,7 +21,12 @@ function pr(n,li){
     let resultado=[...lista2];
     console.log(resultado)
     // Contar el numero de elementos de resultado en la lista original
-    
+    for(var i of resultado){
+        for(var x of li){
+            rta2=console.count(x)
+        }
+
+    } console.log(rta2)
 
 }
 
