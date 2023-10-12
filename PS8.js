@@ -1,5 +1,16 @@
 function pr(n,li){
     var contador=0;
+    let i;
+    let x;
+    for(x in li){ // 0 1 2 3 
+        for(i of li){//2 1 2 1
+            if(i ==li[x]){
+                
+                contador=contador+1
+            }
+        }
+
+    }console.log(contador)    
     // for(let i=0; i<li.length;i++){
     //     const resultado = li.filter((x)=>x==li[i])
     //     console.log(resultado)
@@ -24,7 +35,8 @@ function pr(n,li){
     for(i of resultado){
         var contador=contador+1
         }
-    } console.log(contador)
+    } 
+    //console.log(contador)
 
 
     // for(var i=0; of resultado){
