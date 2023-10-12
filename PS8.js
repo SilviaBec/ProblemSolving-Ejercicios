@@ -7,44 +7,20 @@ function pr(n,li){
             if(i ==li[x]){
                 
                 contador=contador+1
+                
+                
             }
         }
 
-    }console.log(contador)    
-    // for(let i=0; i<li.length;i++){
-    //     const resultado = li.filter((x)=>x==li[i])
-    //     console.log(resultado)
-    // }
+    }   
+    
+    if(Number.isInteger(contador)){
+        console.log((contador-n)/2)
+    }
+}
 
-    let lista=[]
-    for( let i=0;i<li.length;i++){
-        if(lista.includes(li[i])==false){
-            lista.push(li[i])
-            
-        }
-        // lista.push(li[i])
-        
-    } //console.log(lista)
+pr(9,[10, 20, 20, 10, 10, 30, 50, 10, 20])
 
+//debe dar 3 y da 9
 
-    //Eliminar duplicados
-    const lista2= new Set(li);
-    let resultado=[...lista2];
-    //console.log(resultado)
-    //Contar el numero de elementos de resultado en la lista original
-    for(i of resultado){
-        var contador=contador+1
-        }
-    } 
-    //console.log(contador)
-
-
-    // for(var i=0; of resultado){
-    //     for(var x of li){
-    //         rta2=console.count(x)
-    //     }
-
-    // } console.log(rta2)
-
-
-pr(3,[2,1,2,1])
+//10 [1,1,3,1,2,1,3,3,3,3] debe dar 4 y me da 16
