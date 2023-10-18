@@ -1,13 +1,11 @@
 function pr(n,li){
     var contador=0;
-    let i;
-    let x;
-    for(x in li){ // 0 1 2 3 
-        for(i of li){//2 1 2 1
+    for(let x in li){ // 0 1 2 3 
+        for(let i of li){//2 1 2 1
             if(i ==li[x]){
                 
                 contador=contador+1
-                
+                contador=contador/2
                 
             }
         }
@@ -15,7 +13,9 @@ function pr(n,li){
     }   
     
     if(Number.isInteger(contador)){
-        console.log((contador-n)/2)
+        let resultado= Math.sqrt((contador-2)/2)
+        resultado=resultado.toString().split('.')
+        console.log(resultado[0])
     }
 }
 
