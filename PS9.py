@@ -4,8 +4,9 @@ def libro(pagi,num):
     else:
         print('Desde el inicio')
 
-    for x in range(2,num):
-        pass
+    if num%2==0:
+        numDepares=(num+2)/2
+
 
 
 libro(6,2) #Debe dar 1
