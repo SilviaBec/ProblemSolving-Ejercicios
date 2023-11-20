@@ -4,8 +4,15 @@ def libro(pagi,num):
     else:
         print('Desde el inicio')
 
-    if num%2==0:
+    if (num+2)%2==0:
         numDepares=(num+2)/2
+    else:
+        numDepares=(num+1)/2
+
+    if pagi>numDepares/2:
+        pass
+    
+
 
 
 
