@@ -9,8 +9,16 @@ def libro(pagi,num):
     else:
         numDepares=(num+1)/2
 
-    if pagi>numDepares/2:
-        pass
+    if pagi==numDepares/2:
+        resultado=1
+    elif pagi<numDepares/2:
+        resultado=(numDepares/2)-pagi
+        print(resultado/2)
+    else:
+        resultado=(pagi-(numDepares/2))
+    
+    print(resultado)
+    
     
 
 
