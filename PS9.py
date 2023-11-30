@@ -7,26 +7,28 @@ def libro(num,pagi):
     else:
         print('Desde el inicio')
 
-        if num%2 ==0:
-            num=num+2
-            numDepares=(num)/2
-            mitadPares=numDepares/2
-            print(int(numDepares),int(mitadPares))
-        else:
-            num=num+1
-            numDepares=num/2
-            mitadPares=numDepares/2
-            print(numDepares,mitadPares)
+    if num%2 ==0:
+        num=num+2
+        numDepares=(num)/2
+        mitadPares=numDepares/2
+        #print(int(numDepares),int(mitadPares))
+    else:
+        num=num+1
+        numDepares=num/2
+        mitadPares=numDepares/2
+        if pagi>mitadPares:
+            resultado=((num-1)-pagi)/2
+            print(resultado) 
 
-    if pagi-mitadPares==0:
-        resultado=1
-        print(resultado) #esto aca no imprime 
+    if pagi>mitadPares:
+        resultado=((num-1)-pagi)/2
+        
     elif pagi-mitadPares<0:
         resultado= numDepares-(numDepares-pagi)
-        print(resultado)
-    elif numDepares-pagi<0:
-        resultado=numDepares-pagi
-        print(abs(resultado))
+    
+    # elif numDepares-pagi<0:
+    #     resultado=numDepares-pagi
+    #     print(abs(resultado))
 
     
 
@@ -35,5 +37,7 @@ def libro(num,pagi):
     
 
 #libro(6,2) #Debe dar 1
-libro(8,7) #Debe dar 2 CREO , de atras pa delante, pero no esta funcionando , probar en este caso hipotetico
+libro(5,3) 
+#Debe dar 2 CREO , de atras pa delante, pero no esta funcionando , probar en este caso hipotetico
 #libro(8,2) #Debe dar 1
+#8 7
