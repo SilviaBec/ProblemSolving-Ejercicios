@@ -24,9 +24,16 @@ def libro(num,pagi):
     elif pagi-mitadPares<0:
         resultado= numDepares-(numDepares-pagi)
         print(resultado)
+    elif numDepares-pagi<0:
+        resultado=numDepares-pagi
+        print(abs(resultado))
+
+    
+
 
 
     
 
 #libro(6,2) #Debe dar 1
-libro(8,2) #Debe dar 1
+libro(8,7) #Debe dar 2 CREO , de atras pa delante, pero no esta funcionando , probar en este caso hipotetico
+#libro(8,2) #Debe dar 1
