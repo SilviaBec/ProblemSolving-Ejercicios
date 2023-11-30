@@ -21,6 +21,11 @@ def libro(num,pagi):
     if pagi-mitadPares==0:
         resultado=1
         print(resultado) #esto aca no imprime 
+    elif pagi-mitadPares<0:
+        resultado= numDepares-(numDepares-pagi)
+        print(resultado)
+
+
     
 
 #libro(6,2) #Debe dar 1
