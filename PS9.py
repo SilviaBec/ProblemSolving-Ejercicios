@@ -11,7 +11,16 @@ def libro(num,pagi):
         num=num+2
         numDepares=(num)/2
         mitadPares=numDepares/2
-        
+        if pagi>mitadPares:
+            resultado=((num-1)-pagi)/2
+            if resultado%2!=0:
+                print(resultado-1)
+        elif pagi==mitadPares:
+            resultado=1
+            print(resultado)
+        else:
+            resultado=numDepares-(numDepares-pagi)
+            print(resultado/2)
 
 
     else:
@@ -27,7 +36,7 @@ def libro(num,pagi):
             print(resultado)
         else:
             resultado=numDepares-(numDepares-pagi)
-            print(resultado)
+            print(resultado/2)
 
 
     if pagi>mitadPares:
@@ -47,7 +56,7 @@ def libro(num,pagi):
     
 
 #libro(6,2) #Debe dar 1
-libro(11,2) 
+#libro(11,2) 
 #Debe dar 2 CREO , de atras pa delante, pero no esta funcionando , probar en este caso hipotetico
-#libro(8,2) #Debe dar 1
+libro(8,2) #Debe dar 1
 #8 7
