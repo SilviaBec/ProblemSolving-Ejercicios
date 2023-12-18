@@ -2,11 +2,7 @@
 #llamaba como si fuera pag, abajo al llamar la funcion igual , revisar que si
 # pongo num, pag abajo ponga el valor de num, valor pag
 def libro(num,pagi):
-    if pagi>=num/2:
-        print('Desde el final')
-    else:
-        print('Desde el inicio')
-
+    
     if num%2 ==0:
         num=num+2
         numDepares=(num)/2
@@ -55,8 +51,8 @@ def libro(num,pagi):
 
     
 
-libro(6,2) #Debe dar 1
-libro(11,6) #DEBE DAR 2 
+libro(12,5) #Debe dar 3 NO ESTA FUNCINANDO
+#libro(11,6) #DEBE DAR 2 
 #Debe dar 2 CREO , de atras pa delante, pero no esta funcionando , probar en este caso hipotetico
-libro(8,2) #Debe dar 1
+#libro(8,2) #Debe dar 1
 #8 7
