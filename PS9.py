@@ -6,18 +6,23 @@ def libro(num,pagi):
     if num%2 ==0:
         num=num+2
         numDepares=(num)/2
-        mitadPares=numDepares/2
+        mitadPares=numDepares/2 # El problema puede estar aca 7/2 que sale un decimal
+        print(mitadPares,'aca')
         if pagi>mitadPares:
             resultado=((num-1)-pagi)/2
+            print(resultado)
             if resultado%2!=0:
                 print(round(resultado-1))
+            else:
+                print(resultado-1)
         elif pagi==mitadPares:
             resultado=1
             print(round(resultado))
         else:
             resultado=numDepares-(numDepares-pagi)
+            print(resultado)
             print(round(resultado/2))
-
+    
 
     else:
         num=num+1
